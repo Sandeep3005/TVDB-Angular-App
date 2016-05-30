@@ -1,0 +1,30 @@
+<div class="container">
+    
+    <div class="row">
+        <div class="col-md-12 text-center text-decoration">Welcome to RateYourShow.com</div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12 text-decoration text-center">Pick show under various genre and rate them and see which show is best. </div>
+    </div>
+    
+    <div class="row">&nbsp;&nbsp;&nbsp;</div>
+    <div *ngIf = "genres && genres.length">                
+        <div *ngFor = "let genre of genres; let i = odd">
+            <div class="col-md-1"></div>
+            <div class="col-md-4 dimensions">
+                <a [routerLink]="['Shows',{id: genre.genreId}]">
+                    <img src="/resources/{{genre.genreImg}}" class="img-responsive"/>   
+                </a>                                 
+            </div>  
+            <!-- Make new for every second genre -->
+            <div *ngIf = "i"> 
+                <div class="row">&nbsp;</div>
+                <div class="row">&nbsp;</div>
+            </div>                                                     
+        </div>                                
+    </div>
+        
+ </div>   
+
+

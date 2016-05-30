@@ -1,0 +1,21 @@
+.dimensions{
+        
+    height:20%;
+    
+    background: #02AAB0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+    box-shadow: 10px 10px 5px #888888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-decoration{
+    color: #900C3F;
+    font-size: 180%;
+    font-family: 'Lobster', cursive;
+}
+
+    

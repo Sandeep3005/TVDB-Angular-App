@@ -1,0 +1,22 @@
+[
+    {
+        "genreId"   : 1,
+        "genreName" : "Drama",
+        "genreImg"  : "drama.png"
+    },
+    {
+        "genreId"   : 2,
+        "genreName" : "SuperHero",
+        "genreImg"  : "superhero.png"
+    },
+    {
+        "genreId"   : 3,
+        "genreName" : "Crime",
+        "genreImg"  : "crime.png"
+    },    
+    {
+        "genreId"   : 4,
+        "genreName" : "Sitcom",
+        "genreImg"  : "sitcom.png"
+    }        
+]

@@ -1,0 +1,113 @@
+<div *ngIf = "show">  
+    <!--Top row for shows heading-->  
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 div-align-center div-decoration div-shadow backColor">
+            {{show.showName}}
+        </div>
+        <div class="col-md-2"></div>        
+    </div>
+    <br>
+    
+    <!--Middle row for shows description-->
+    <div class="row">
+        <div class="col-md-2 navigation-panel div-align-center">
+            <div *ngIf="chkPrevious">
+                <button type="button" id="circle"  title="Previous" class="glyphicon glyphicon-chevron-left" (click)="showPrevious()"></button>
+            </div>
+        </div>
+        <!-- Center Section for details -->
+        <div class="col-md-8 show_details">
+            <div class="col-md-7">
+                <!-- Plot details -->
+                <div class="row div_plot">
+                    {{show.showPlot}}
+                </div>
+                <!-- Row for gap -->
+                <div class="row">&nbsp;</div> 
+                <!--Release date row-->
+                <div class="row">
+                    <div class="col-md-4">
+                        Released On
+                    </div>
+                    <div class="col-md-8">
+                       {{show.showRelease}}
+                    </div>
+                </div>                
+                <!--End Date row-->
+                <div class="row">
+                    <div class="col-md-4">
+                        Last Aired On
+                    </div>
+                    <div class="col-md-8">
+                       {{show.showEnd}}
+                    </div>
+                </div> 
+                <!--Total Season row-->
+                <div class="row">
+                    <div class="col-md-4">
+                        Seasons
+                    </div>
+                    <div class="col-md-8">
+                       {{show.showSeasons}}
+                    </div>
+                </div>  
+                <!--Ratings row-->
+                <div class="row">
+                    <div class="col-md-4">
+                        Rating
+                    </div>
+                    <div class="col-md-8">
+                       <star [rating]="show.showRating"></star>
+                    </div>
+                </div>   
+                <!--IMDB row-->
+                <div class="row">
+                    <div class="col-md-4">
+                        IMDB
+                    </div>
+                    <div class="col-md-8">
+                       <a href="{{show.showLink}}" target="_blank" class="imdb_link">Visit IMDB Link</a>
+                    </div>
+                </div>  
+                <!--Rank row-->
+                <div class="row">
+                    <div class="col-md-4">
+                        Rank
+                    </div>
+                    <div class="col-md-8">
+                       {{show.showRank}}
+                    </div>
+                </div>  
+                <!-- Row for gap -->
+                <div class="row">&nbsp;</div> 
+                <!-- Row for gap -->
+                <div class="row">&nbsp;</div> 
+                <!-- Row for gap -->
+                <div class="row">&nbsp;</div> 
+                <!-- Row for gap -->
+                <div class="row">&nbsp;</div> 
+                                                                                
+                <!--Back Button row-->
+                <div class="row">
+                    <div class="col-md-4">
+                        <a class='btn btn-primary pull-left' (click)='onBack()'>
+                            <i class='glyphicon glyphicon-chevron-left'></i> Back
+                        </a>
+                    </div>
+                </div>                                                                                                   
+            </div>
+            <div class="col-md-5">
+                <img src="{{show.showImg}}" class="img-responsive"/>                    
+            </div>    
+        </div>
+        <div class="col-md-2 navigation-panel div-align-center" >
+            <div *ngIf="chkNext">
+                <button type="button" id="circle" class="glyphicon glyphicon-chevron-right" title="Next" (click)="showNext()"></button>
+            </div>                
+        </div>           
+     </div>
+</div>
+<!--
+
+-->

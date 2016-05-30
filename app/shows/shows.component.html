@@ -1,0 +1,40 @@
+<div *ngIf = "shows && shows.length">
+    <div class="div-decoration div-align-center">
+        Vote for your favourite show by click on thumbs up
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="rows" *ngFor="let show of sortShows()">          
+                <div class="col-md-2 div-align-center rank-dimensions div-shadow">
+                    {{show.showRank}}
+                </div>    
+                <div class="col-md-8 div-align-center name-dimensions div-shadow backColor">             
+                    <a [routerLink]="['ShowDetail',{id: show.showId}]">
+                    {{show.showName}}
+                    </a>                        
+                </div>     
+                <!--         
+                <div class="col-md-1 vote-dimensions" title="Vote +1 for your show">            
+                    <a (click)='VoteUp(show)'><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>            
+                </div>
+                -->        
+                <div class="row">&nbsp;</div>
+                <div class="row">&nbsp;</div>            
+            </div>             
+        </div>
+    </div>         
+        
+</div>
+
+<!--
+    <div class="rows">   
+        <div class="col-md-2"></div>
+        <div class="col-md-10">
+            <div class="rank_div">1</div>
+            <div class="name_div">Game of Thrones</div>            
+        </div>                            
+    </div>        
+    <br>
+-->    

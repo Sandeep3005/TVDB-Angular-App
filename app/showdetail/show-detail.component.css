@@ -1,0 +1,52 @@
+.div-align-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-decoration{
+    color: #900C3F;
+    font-size: 180%;
+    font-family: 'Lobster', cursive;
+}
+
+.div-shadow{
+    box-shadow: 10px 10px 5px #888888;
+    /*border-style: solid;
+    border-width: 1px;*/
+}
+
+.backColor{
+    background: #02AAB0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.div_Plot{
+    font-size:130%!important;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.imdb_link{
+    text-decoration: none;
+    color: #900C3F;
+}
+
+.show_details{
+    font-size:110%;
+}
+
+.navigation-panel{
+    height: 50%;
+     font-size: 200%;
+  }
+  
+  #circle {
+
+	width: 50px;
+	height: 50px;
+    
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}

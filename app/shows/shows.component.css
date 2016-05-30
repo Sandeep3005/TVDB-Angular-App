@@ -1,0 +1,58 @@
+
+.backColor{
+    background: #02AAB0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.rank-dimensions{
+    color: #900C3F;
+    font-size: 180%;        
+    height:8%;
+    width:10%;
+    background-color: #33598e;
+}
+
+.name-dimensions{
+    color: #900C3F;
+    font-size: 180%;
+    height : 8%;    
+    width  : 90%;  
+   
+ }
+
+.vote-dimensions{
+    text-decoration: none!important;
+    font-size: 180%;
+    height:8%;    
+
+}
+.vote-dimensions:hover{
+        font-size: 280%;
+}
+
+.div-align-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-decoration{
+    color: #900C3F;
+    font-size: 180%;
+    font-family: 'Lobster', cursive;
+}
+
+.div-shadow{
+    box-shadow: 10px 10px 5px #888888;
+    /*border-style: solid;
+    border-width: 1px;*/
+}
+
+.name-dimensions a, .rank-dimensions a{
+  color: #900C3F !important; 
+  text-decoration: none!important;
+}
+.name-dimensions:hover{
+        font-size: 200%;
+}
+
